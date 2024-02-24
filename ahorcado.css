@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Ultra&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif,'ultra';
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:linear-gradient( #f3d599 , #a57b08) no-repeat;
+    
+}
+h1{
+    font-family: 'ultra';
+    font-size: 60px;
+    background-image: linear-gradient( #d07c5d , #5c2606);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    text-shadow:1px 3px 8px rgb(34, 30, 30);
+   letter-spacing: 2px;
+   font-weight: 400;
+    
+}
+.emp{
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+    background:linear-gradient( #327dee , #6bdd7e) no-repeat; 
+    border-radius: 40%;
+    box-shadow: 1px 2px 4px black;
+    cursor:pointer
+    
+}
+.emp:hover{
+    background:linear-gradient( #e62619 , #390202)
+}
+.contPrinc{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    /* border: 4px solid  #0e0b01; */
+}
+h2{
+    font-family: 'ultra';
+    position: absolute;
+    top: 60px;
+    margin-left: 200px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    background-image: linear-gradient( #592715 , #5c2606);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    text-shadow:2px 2px 8px rgb(37, 31, 31);
+    font-weight: 300;
+}
+.imgAhorcado{
+    width: 300px;
+    height: 100%;
+    position: relative;
+    display: block;
+    
+    justify-content: center;
+    /* border: 4px solid  #0e0b01;  */
+    
+    object-fit: cover; 
+    filter:drop-shadow(1px 1px 2px black)
+     
+}
+#cabeza{
+    position: absolute;
+    top: 123px;
+    left: 152px;
+}
+#tronco{
+    position: absolute;
+    top: -489px;
+    left: -200px;
+    transform: scale(0.08);
+    z-index: 10;
+}
+#brazo1{
+    position: absolute;
+    top: -489px;
+    left: -30px;
+    transform: scale(0.08);
+}
+#brazo2{
+    position: absolute;
+    top: -489px;
+    left: -31px;
+    transform: scale(0.08);
+}
+#pierna1{
+    position: absolute;
+    top: -588px;
+    left: -20px;
+    transform: scale(0.08);
+}
+#pierna2{
+    position: absolute;
+    top: -595px;
+    left: -10px;
+    transform: scale(0.08);
+}
+.visible{
+    visibility: hidden;
+}
+.palabra{
+    width: 60%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    /* border: 4px solid  #0e0b01; */
+}
+.letra{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   font-size: 30px;
+    border: 2px solid black;
+    color:transparent;
+    background-color: rgb(76, 99, 92) !important;
+}
+.espacio{
+    width: 60px;
+    height: 60px;
+    border-bottom: 1px solid;
+    opacity: 0;
+ 
+}
+.lose{
+    position: absolute;
+    top: 10px;
+    right: 280px;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    border: solid 3px white;
+    color: azure;
+    font-size: 30px;
+    visibility: visible;
+}
+.win{
+    position: absolute;
+    top: 10px;
+    right: 280px;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 238, 142);
+    border: solid 3px white;
+    color: azure;
+    font-size: 30px;
+    visibility: visible;
+}
+span{
+    position: absolute;
+    bottom: 50px;
+    margin: auto;
+    color: red;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+    
+    
+}
